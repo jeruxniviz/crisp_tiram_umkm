@@ -14,7 +14,7 @@
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f5eada;
-            overflow-x: hidden; /* Mencegah scroll horizontal saat animasi masuk */
+            overflow-x: hidden; 
         }
 
         /* Navbar */
@@ -91,19 +91,16 @@
             margin-bottom: 15px;
         }
 
-        /* === Products Section (DI UPDATE) === */
         .products-section {
-            /* Background lama dihapus, diganti dengan style di .products-container-styled */
             /* background-color: #fff8e1; */ 
             padding-bottom: 100px;
         }
 
-        /* Style baru untuk box container produk */
         .products-container-styled {
-            background: linear-gradient(135deg, #fffdf2 0%, #ffe8cc 100%); /* Gradasi warna hangat */
-            border-radius: 30px; /* Sudut membulat */
-            padding: 60px 30px; /* Jarak dalam */
-            box-shadow: 0 15px 40px rgba(211, 84, 0, 0.1); /* Bayangan halus berwarna oranye */
+            background: linear-gradient(135deg, #fffdf2 0%, #ffe8cc 100%); 
+            border-radius: 30px; 
+            padding: 60px 30px;
+            box-shadow: 0 15px 40px rgba(211, 84, 0, 0.1); 
             position: relative;
         }
 
@@ -111,21 +108,20 @@
             border: none;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: all 0.4s ease-in-out; /* Transisi lebih halus untuk animasi hover */
+            transition: all 0.4s ease-in-out; 
             overflow: hidden;
             margin-bottom: 30px;
             background-color: #fff;
         }
         .card:hover {
-            transform: translateY(-15px); /* Sedikit lebih naik saat di-hover */
-            box-shadow: 0 15px 30px rgba(211, 84, 0, 0.2); /* Bayangan lebih tegas saat hover */
+            transform: translateY(-15px); 
+            box-shadow: 0 15px 30px rgba(211, 84, 0, 0.2); 
         }
         .card-img-top {
             height: 200px;
             object-fit: cover;
             transition: transform 0.4s;
         }
-        /* Efek zoom sedikit pada gambar saat card di-hover */
         .card:hover .card-img-top {
             transform: scale(1.05);
         }
@@ -182,12 +178,11 @@
             color: #d35400;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
             .hero p { font-size: 1.1rem; }
             .products-container-styled {
-                padding: 40px 20px; /* Padding lebih kecil di mobile */
+                padding: 40px 20px; 
             }
         }
     </style>
@@ -365,11 +360,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script>
-        // Mengaktifkan animasi saat scroll
         AOS.init({
-            duration: 800, // Durasi animasi dalam milidetik (0.8 detik)
-            once: true, // Animasi hanya terjadi sekali saat scroll ke bawah
-            offset: 100 // Jarak dalam pixel dari bawah layar untuk memicu animasi
+            duration: 800,
+            once: true, 
+            offset: 100 
         });
     </script>
 </body>
